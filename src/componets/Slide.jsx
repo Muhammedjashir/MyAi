@@ -53,7 +53,7 @@ const Slide = () => {
       }}
     >
       {/* Text Section */}
-      <div className="relative z-10 flex flex-col justify-center px-6 md:px-16 py-16 md:py-24 max-w-[90%] md:max-w-[700px] text-black">
+      <div className="relative z-10 flex flex-col justify-center px-6 md:px-16 py-26 md:py-34 max-w-[90%] md:max-w-[700px] text-black">
        <h1 className="text-lg sm:text-xl md:text-2xl mb-4 font-semibold">A SMART WAY TO CONNECT</h1>
         <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold leading-tight bg-gradient-to-r from-orange-500 to-black text-transparent bg-clip-text mb-5">
           Smart business cards That Speak for You.{" "}
@@ -89,7 +89,7 @@ const Slide = () => {
       </div>
 
       {/* Product Slider Images */}
-      <div className="relative z-10 w-full md:w-1/2 h-[300px] md:h-[600px] flex justify-center items-center mt-10 md:mt-0">
+      <div className="relative z-10 w-full md:w-1/2 h-[120px] md:h-[600px] flex justify-center items-center md:mt-10">
         {images.map((item, index) => (
           <img
             key={index}

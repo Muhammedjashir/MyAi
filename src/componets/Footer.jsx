@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="bg-zinc-900 text-white">
       {/* Main footer content */}
-      <div className=" max-w-7xl mx-auto px-6 py-10 flex flex-col md:flex-row flex-wrap justify-between items-start md:items-center gap-10">
+      <div className=" max-w-7xl mx-auto px-6 py-10 flex flex-col  md:flex-row flex-wrap justify-between items-start  gap-10">
         {/* Logo & About */}
         <div className="flex-1 min-w-[250px]">
           <h2 className="text-2xl font-bold font-serif cursor-pointer mb-4">
@@ -96,10 +96,14 @@ const Footer = () => {
       {/* Bottom Footer */}
       <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-center items-center text-center gap-2 md:gap-6">
         <p className="text-gray-500 text-sm">
-          &copy; 2024 <span className="text-orange-500">IMIT Park Ltd</span>. All rights reserved.
+          &copy; 2024 <span className="text-orange-500">IMIT Park Ltd</span>.
+          All rights reserved.
         </p>
         <p className="text-gray-500 text-sm">Terms of Use | Privacy Policy</p>
-        <p className="text-gray-500 text-sm">Developed by Imitpark Solutions</p>
+        <p className="text-gray-500 text-sm">Return Policy | Refund Policy</p>
+        <p className="text-gray-500 text-sm">
+          Developed by <span className="text-orange-500">Imitpark Ltd</span>{" "}
+        </p>
       </div>
     </footer>
   );

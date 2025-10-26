@@ -4,7 +4,7 @@ function Landingpage() {
   return (
     <>
       <div>
-        <div className="relative min-h-screen w-full bg-cover bg-center ">
+        <div className="relative min-h-screen w-full bg-cover bg-center  ">
           <img
             src="./background.jpg"
             alt="Background"
@@ -30,11 +30,11 @@ function Landingpage() {
               </span>
             </p>
 
-            <div className="mt-20 bottom-0 sm:bottom-10 flex flex-col sm:flex-row w-full gap-4 sm:space-x-6 px-4 ">
-              <button className="border-2 rounded-lg px-10 sm:px-20 py-3 bg-blue-500 text-white font-semibold cursor-pointer">
+            <div className="mt-20 bottom-0 sm:bottom-10 flex flex-col sm:flex-row w-full gap-4 sm:space-x-6 px-4  ">
+              <button className="border-2 rounded-lg px-10 sm:px-20 py-3 bg-blue-500 text-white font-semibold hover:scale-105 transition-transform duration-300 cursor-pointer">
                 Explore Cards
               </button>
-              <button className="border-1 rounded-lg px-10 sm:px-20 py-3 font-semibold  cursor-pointer">
+              <button className="border-1 rounded-lg px-10 sm:px-20 py-3 font-semibold hover:scale-105 transition-transform duration-300 hover:bg-gray-200 cursor-pointer">
                 See How it Works
               </button>
             </div>

@@ -1,9 +1,15 @@
 import React from "react";
 
 const Secpage = () => {
+  const Rating = [
+    { rate: "10K+", title: "Cards Shared" },
+    { rate: "99%", title: "Success Rate" },
+    { rate: "24/7+", title: "Support Availability" },
+    { rate: "1s", title: "Tap Speed" },
+  ];
   const features = [
     {
-        logo: "https://img.freepik.com/premium-vector/share-icon_1134104-20993.jpg?semt=ais_hybrid&w=740&q=80",
+      logo: "https://img.freepik.com/premium-vector/share-icon_1134104-20993.jpg?semt=ais_hybrid&w=740&q=80",
       title: "Instant Sharing",
       description:
         "Share contact info with a simple tap. No more manual typing or exchanging physical cards.",
@@ -45,7 +51,7 @@ const Secpage = () => {
       <h1 className="text-5xl md:text-6xl font-bold leading-tight bg-gradient-to-r from-orange-500 to-black text-transparent bg-clip-text text-center">
         Why Choose MYAICARD
       </h1>
-      <p className="text-xl md:text-2xl text-gray-700 text-center font-semibold mb-10">
+      <p className="text-xl md:text-2xl text-black text-center font-semibold mb-10">
         Revolutionize your networking experience with our <br /> intelligent
         digital NFC solutions
       </p>
@@ -65,6 +71,23 @@ const Secpage = () => {
             <p className="text-gray-700">{feature.description}</p>
           </div>
         ))}
+      </div>
+      <div className="flex flex-col items-center justify-center mt-10 px-4">
+        <div className="flex flex-wrap justify-center  sm:gap-16 md:gap-24 lg:gap-32 xl:gap-40 mt-6">
+          {Rating.map((item) => (
+            <div
+              key={item.title}
+              className="flex flex-col items-center justify-center gap-2 text-center p-4 sm:p-6"
+            >
+              <span className="text-4xl sm:text-5xl font-extrabold text-orange-500">
+                {item.rate}
+              </span>
+              <span className="text-lg sm:text-xl font-medium text-blue-900">
+                {item.title}
+              </span>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

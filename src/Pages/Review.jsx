@@ -90,7 +90,7 @@ const Review = () => {
 
         {/* Write a Review Button */}
         <div className="flex justify-center mt-16">
-          <button className="bg-gradient-to-r from-orange-500 to-black text-white font-semibold px-8 py-3 rounded-full shadow-md hover:shadow-xl hover:scale-105 transition-transform duration-300">
+          <button className="cursor-pointer bg-gradient-to-r from-orange-500 to-black text-white font-semibold px-8 py-3 rounded-full shadow-md hover:shadow-xl hover:scale-105 transition-transform duration-300">
             Write a Review
           </button>
         </div>

@@ -85,7 +85,7 @@ const Header = () => {
                 <option
                   key={country.name}
                   value={country.name}
-                  className="text-black"
+                  className="text-white"
                 >
                   {country.flag} {country.name}
                 </option>
@@ -128,7 +128,7 @@ const Header = () => {
                 <option
                   key={country.name}
                   value={country.name}
-                  className="text-black"
+                  className="text-white"
                 >
                   {country.flag} {country.name}
                 </option>
