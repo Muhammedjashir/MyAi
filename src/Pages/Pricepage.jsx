@@ -14,13 +14,13 @@ const Pricepage = () => {
       description: "Most popular for professionals",
       price: "Starts From ₹999.00",
     },
-    {
-      background: "https://cdn-icons-png.flaticon.com/512/1688/1688988.png",
-      title: "Always Updated",
-      description:
-        "Change your information anytime. Your contacts always have access to your latest details.",
-      price: "",
-    },
+    // {
+    //   background: "https://cdn-icons-png.flaticon.com/512/1688/1688988.png",
+    //   title: "Always Updated",
+    //   description:
+    //     "Change your information anytime. Your contacts always have access to your latest details.",
+    //   price: "",
+    // },
   ];
   const plans = [
     {
@@ -91,7 +91,7 @@ const Pricepage = () => {
           For all professions
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-7xl mb-7">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 w-full max-w-7xl mb-7">
           {features.map((feature, index) => (
             <div
               key={index}
