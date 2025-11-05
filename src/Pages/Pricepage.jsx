@@ -1,8 +1,11 @@
 import React from "react";
 
+
+
 const Pricepage = () => {
   const features = [
     {
+      vdo:"animation.mp4",
       background: "blue.png",
       title: "Digital Starter",
       description: "Perfect for individuals getting started",
@@ -79,15 +82,16 @@ const Pricepage = () => {
       { name: "Taps", starter: "Unlimited", pro: "Unlimited", proType: "text" },
     ],
   };
+  
 
   return (
     <>
-      <div className="min-h-screen w-full flex flex-col items-center justify-center px-4 sm:px-6 md:px-10 py-10 bg-gradient-to-r from-gray-500 via-slate-100 to-gray-500">
+      <div className="min-h-screen w-full flex flex-col items-center justify-center px-4 sm:px-6 md:px-10 py-10 bg-gradient-to-r from-black via-slate-500 to-gray-200">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight bg-gradient-to-r from-orange-500 to-black text-transparent bg-clip-text text-center">
           Multiple Options Available
         </h1>
 
-        <p className="text-lg sm:text-xl md:text-2xl text-gray-700 text-center font-semibold mt-4 mb-10">
+        <p className="text-lg sm:text-xl md:text-2xl text-white text-center font-semibold mt-4 mb-10">
           For all professions
         </p>
 
@@ -98,11 +102,14 @@ const Pricepage = () => {
               className="cursor-pointer relative rounded-xl shadow-md hover:shadow-xl transition-transform duration-300 hover:scale-105 overflow-hidden"
             >
               {/* Image */}
-              <img
+              {/* <img
                 src={feature.background}
                 alt={feature.title}
                 className="w-full h-110 sm:h-full md:h-120 object-contain"
-              />
+              /> */}
+                <video autoPlay loop muted className="w-full h-110 sm:h-full md:h-120 object-cover ">
+                  <source src={feature.vdo} type="video/mp4" />
+                </video>
 
               {/* Overlay Gradient */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/10"></div>
@@ -133,8 +140,9 @@ const Pricepage = () => {
                 <img
                   src={feature.background}
                   alt={feature.title}
-                  className="w-full h-110 sm:h-full md:h-120 object-contain"
+                  className="w-full h-110 sm:h-full md:h-120 object-contain "
                 />
+              
 
                 {/* Overlay Gradient */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/10"></div>
@@ -206,12 +214,12 @@ const Pricepage = () => {
                       <td className="text-center py-3 px-2 sm:px-4">
                         {typeof item.starter === "boolean" ? (
                           item.starter ? (
-                            <span className="text-green-400 text-lg">✓</span>
+                            <span className="text-green-300 text-lg">✓</span>
                           ) : (
-                            <span className="text-gray-400">—</span>
+                            <span className="text-green-300">—</span>
                           )
                         ) : (
-                          <span className="text-green-400 font-semibold">
+                          <span className="text-green-300 font-semibold">
                             {item.starter}
                           </span>
                         )}

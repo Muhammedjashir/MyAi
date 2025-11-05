@@ -23,7 +23,7 @@ const Footer = () => {
               className="w-[40px] h-[40px] flex justify-center items-center bg-zinc-800 rounded-full hover:bg-zinc-700 transition-all duration-300"
             >
               <img
-                src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png"
+                src="/Logos/insta.png"
                 alt="Instagram"
                 className="w-[18px] h-[18px]"
               />
@@ -36,7 +36,7 @@ const Footer = () => {
               className="w-[40px] h-[40px] flex justify-center items-center bg-zinc-800 rounded-full hover:bg-zinc-700 transition-all duration-300"
             >
               <img
-                src="https://static.vecteezy.com/system/resources/previews/018/930/698/non_2x/facebook-logo-facebook-icon-transparent-free-png.png"
+                src="/Logos/facebook.webp"
                 alt="Facebook"
                 className="w-[27px] h-[27px]"
               />
@@ -49,7 +49,7 @@ const Footer = () => {
               className="w-[40px] h-[40px] flex justify-center items-center bg-zinc-800 rounded-full hover:bg-zinc-700 transition-all duration-300"
             >
               <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png"
+                src="/Logos/LinkedIn.webp"
                 alt="LinkedIn"
                 className="w-[18px] h-[18px]"
               />

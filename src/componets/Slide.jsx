@@ -14,7 +14,7 @@ const Slide = () => {
     // },
     {
       src: "red.png",
-      bg: "#F8A4A4", // red
+      bg: "#660b0b", // red
     },
     // {
     //   src: "white.png",
@@ -26,7 +26,15 @@ const Slide = () => {
     // },
     {
       src: "Gold.png",
-      bg: "#f1ce76", // gold
+      bg: "#775706", // gold
+    },
+    {
+      src: "blue.png",
+      bg: "#0c365e", // blue
+    },
+    {
+      src: "green.png",
+      bg: "#285811", // green
     },
   ];
 
@@ -49,20 +57,27 @@ const Slide = () => {
     <div
       className="relative flex flex-col md:flex-row  items-center min-h-screen overflow-hidden transition-all duration-[500ms] ease-in-out"
       style={{
-        background: `radial-gradient(circle, ${images[imageIndex].bg} 30%, #ffffff 100%)`,
+        background: `radial-gradient(farthest-corner at 100% 100% , ${images[imageIndex].bg} 30%, #ffffff 100%)`,
       }}
     >
       {/* Text Section */}
       <div className="relative z-10 flex flex-col justify-center px-6 md:px-16 py-26 md:py-34 max-w-[90%] md:max-w-[700px] text-black">
-       <h1 className="text-lg sm:text-xl md:text-2xl mb-4 font-semibold">A SMART WAY TO CONNECT</h1>
+        <h1 className="text-lg sm:text-xl md:text-2xl mb-4 font-semibold">
+          A SMART WAY TO CONNECT
+        </h1>
         <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold leading-tight bg-gradient-to-r from-orange-500 to-black text-transparent bg-clip-text mb-5">
           Smart business cards That Speak for You.{" "}
         </h1>
         <p className=" text-base md:text-lg leading-relaxed  text-gray-800">
-          Create stunning digital NFC cards that make sharing <br/>
-          <span className="text-black font-semibold"> contacts
-          effortless and memorable. </span>
+          Create stunning digital NFC cards that make sharing <br />
+          <span className="text-black font-semibold">
+            {" "}
+            contacts effortless and memorable.{" "}
+          </span>
         </p>
+        <button className="border-2 border-white/30 rounded-lg px-4 py-2 bg-transparent text-white font-semibold hover:bg-white/10 hover:scale-105 transition-all duration-300 cursor-pointer mt-5">
+          create your card now
+        </button>
 
         {/* <div className="flex gap-4">
           <a

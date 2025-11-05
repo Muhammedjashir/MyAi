@@ -9,37 +9,37 @@ const Secpage = () => {
   ];
   const features = [
     {
-      logo: "https://img.freepik.com/premium-vector/share-icon_1134104-20993.jpg?semt=ais_hybrid&w=740&q=80",
+      logo: "/Logos/share.jpg",
       title: "Instant Sharing",
       description:
         "Share contact info with a simple tap. No more manual typing or exchanging physical cards.",
     },
     {
-      logo: "https://www.nicepng.com/png/full/46-463477_eco-friendly-image-green-earth-logo-vector.png",
+      logo: "/Logos/eco.png",
       title: "Eco-Friendly",
       description:
         "Go paperless and reduce waste. One digital card replaces thousands of paper business cards.",
     },
     {
-      logo: "https://cdn-icons-png.flaticon.com/512/1688/1688988.png",
+      logo: "/Logos/update.png",
       title: "Always Updated",
       description:
         "Change your information anytime. Your contacts always have access to your latest details.",
     },
     {
-      logo: "https://cdn.freebiesupply.com/logos/large/2x/amazon-analytics-logo-png-transparent.png",
+      logo: "/Logos/analitics.png",
       title: "Smart Analytics",
       description:
         "Track engagements and get valuable insights about your networking interactions.",
     },
     {
-      logo: "https://cdn-icons-png.flaticon.com/512/8730/8730963.png",
+      logo: "/Logos/secure.png",
       title: "Secure & Private",
       description:
         "Enterprise-grade security ensures your contact information remains safe and protected.",
     },
     {
-      logo: "https://toppng.com/uploads/preview/usb-flash-drive-11530974356cla4ghfd6t.png",
+      logo: "/Logos/universal.png",
       title: "Universal Compatibility",
       description:
         "Works with all modern smartphones. No special app required for your contacts.",
@@ -51,7 +51,7 @@ const Secpage = () => {
       <h1 className="text-5xl md:text-6xl font-bold leading-tight bg-gradient-to-r from-orange-500 to-black text-transparent bg-clip-text text-center">
         Why Choose MYAICARD
       </h1>
-      <p className="text-xl md:text-2xl text-black text-center font-semibold mb-10">
+      <p className="text-xl md:text-2xl text-white text-center font-semibold mb-10">
         Revolutionize your networking experience with our <br /> intelligent
         digital NFC solutions
       </p>

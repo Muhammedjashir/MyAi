@@ -33,12 +33,12 @@ const Review = () => {
 
   return (
     <>
-      <div className="min-h-screen w-full flex flex-col items-center bg-gradient-to-r from-black via-white to-slate-500 py-16 px-6">
+      <div className="min-h-screen w-full flex flex-col items-center bg-gradient-to-r from-black via-slate-500 to-gray-300 py-16 px-6">
         {/* Title */}
         <h1 className="text-5xl md:text-6xl font-bold leading-tight bg-gradient-to-r from-orange-500 to-black text-transparent bg-clip-text text-center mb-10">
           What Our Users Say
         </h1>
-        <p className="text-xl md:text-2xl text-gray-700 text-center font-semibold mb-7">Discover why industry leaders choose MyAICard for their <br/> digital networking needs</p>
+        <p className="text-xl md:text-2xl text-white text-center font-semibold mb-7">Discover why industry leaders choose MyAICard for their <br/> digital networking needs</p>
 
         {/* Reviews Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 w-full max-w-7xl">
