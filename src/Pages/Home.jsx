@@ -30,7 +30,6 @@ const Home = () => {
         <Route path="/returnandrefund" element={<ReturnandRefund />} />
       </Routes>
 
-     
 
       {/* Footer visible on all pages */}
       <Footer />
