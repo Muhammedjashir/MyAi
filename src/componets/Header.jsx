@@ -9,6 +9,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
+  
   const [menuOpen, setMenuOpen] = useState(false);
   const [selectedCountry, setSelectedCountry] = useState("India");
 
@@ -40,22 +41,33 @@ const Header = () => {
       {/* Navbar Section */}
       <div className="bg-zinc-900 text-white p-3 flex justify-between md:justify-between items-center fixed w-full top-0 left-0 z-10 px-6">
         {/* Logo */}
-        <h1 className="text-2xl font-bold font-serif cursor-pointer">
+        <button
+          className="text-2xl font-bold font-serif cursor-pointer"
+        >
           MyAICard
-        </h1>
+        </button>
 
         {/* Desktop Navigation Links */}
         <div className="hidden md:flex gap-8">
-          {["Docs", "Features", "Use Case", "Resources", "Contact"].map(
-            (item) => (
-              <h1
-                key={item}
-                className="text-xl font-bold nav-item cursor-pointer hover:text-orange-400 transition-all"
-              >
-                {item}
-              </h1>
-            )
-          )}
+          <button className="text-xl font-bold nav-item cursor-pointer hover:text-orange-400 transition-all">
+            Docs
+          </button>
+          <button
+            className="text-xl font-bold nav-item cursor-pointer hover:text-orange-400 transition-all"
+          >
+            Features
+          </button>
+          <button className="text-xl font-bold nav-item cursor-pointer hover:text-orange-400 transition-all">
+            Use Case
+          </button>
+          <button
+            className="text-xl font-bold nav-item cursor-pointer hover:text-orange-400 transition-all"
+            onClick={() =>
+              window.open("https://imitpark.com/contact", "_blank")
+            }
+          >
+            Contact
+          </button>
         </div>
 
         {/* Right Side: Search + Country Selector */}

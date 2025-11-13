@@ -7,7 +7,7 @@ function Landingpage() {
         <div className="relative min-h-screen w-full bg-cover bg-center">
           {/* Background */}
           <img
-            // src="./background.jpg"
+            src="./background.jpg"
             alt="Background"
             className="absolute inset-0 w-full h-full object-cover"
           />
@@ -47,7 +47,7 @@ function Landingpage() {
             {/* Right Side Full Image */}
             <div className="flex-1 relative h-full w-full">
               <img
-                src="card.jpg"
+                src="crad1.png"
                 alt="Card"
                 className="absolute right-0 top-0 w-full h-full object-cover"
               />

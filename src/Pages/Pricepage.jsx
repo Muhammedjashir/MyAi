@@ -12,6 +12,7 @@ const Pricepage = () => {
       price: "Starts From ₹599.00",
     },
     {
+      vdo:"Business.mp4",
       background: "green.png",
       title: "Business Pro",
       description: "Most popular for professionals",

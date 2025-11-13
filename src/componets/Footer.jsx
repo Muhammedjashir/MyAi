@@ -1,15 +1,19 @@
 import React from "react";
 
+
 const Footer = () => {
+
   return (
     <footer className="bg-zinc-900 text-white">
       {/* Main footer content */}
       <div className=" max-w-7xl mx-auto px-6 py-10 flex flex-col  md:flex-row flex-wrap justify-between items-start  gap-10">
         {/* Logo & About */}
         <div className="flex-1 min-w-[250px]">
-          <h2 className="text-2xl font-bold font-serif cursor-pointer mb-4">
+          <button
+            className="text-2xl font-bold font-serif cursor-pointer mb-4"
+          >
             MY AI CARD
-          </h2>
+          </button>
           <p className="text-sm text-gray-400 mb-4 leading-relaxed">
             Revolutionizing digital networking with <br /> smart NFC technology.
           </p>
@@ -99,8 +103,13 @@ const Footer = () => {
           &copy; 2024 <span className="text-orange-500">IMIT Park Ltd</span>.
           All rights reserved.
         </p>
-        <p className="text-gray-500 text-sm">Terms of Use | Privacy Policy</p>
-        <p className="text-gray-500 text-sm">Return Policy | Refund Policy</p>
+        <button
+          className="text-gray-500 text-sm cursor-pointer"
+        >
+          Terms of Use | Privacy Policy
+        </button>
+        <button
+          className="text-gray-500 text-sm cursor-pointer">Return Policy | Refund Policy</button>
         <p className="text-gray-500 text-sm">
           Developed by <span className="text-orange-500">Imitpark Ltd</span>{" "}
         </p>
